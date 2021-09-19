@@ -54,3 +54,28 @@ function slideLeft() {
     }
 
 }
+
+var autoEnabled = false
+var myVar 
+function autoSlide() {
+
+    if (!autoEnabled)  {
+        myVar = setInterval(slideIfNotLast,  3000);
+        autoEnabled = true;
+        var button = document.querySelector(".button");
+        button.classList.remove("off");
+        button.classList.add("on");
+    }
+    else {
+        clearInterval(myVar);
+        autoEnabled = false;
+        var button = document.querySelector(".button");
+        button.classList.remove("on");
+        button.classList.add("off");
+    }
+}
+function slideIfNotLast() {
+    var centerElement = document.querySelector(".center");
+    if (centerElement.nextElementSibling) {slideRight();
+    }
+}

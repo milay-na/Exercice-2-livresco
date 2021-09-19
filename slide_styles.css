@@ -5,7 +5,6 @@
     }
 
 .button {
-	background-color: #2f4353;
 	border: none;
 	color: white;
 	padding: 15px 32px;
@@ -101,3 +100,10 @@ h1 {
     cursor: pointer;
     font-size: 25px;
     }
+.button.on {
+    background-color: #2f4353;
+}
+
+.button.off {
+    background-color:lightblue
+}
