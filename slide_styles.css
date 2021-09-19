@@ -1,3 +1,9 @@
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center
+    }
+
 .button {
 	background-color: #2f4353;
 	border: none;
@@ -18,23 +24,48 @@ h1 {
     color : #2f4353
 }
 .pola {
-    width: 80%;
+    width: 200px;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 25px;
+    float: left;
+    padding: 5px;
+}
+.pola.mini { 
+    width: 50px;
+    margin-bottom: 5px;
+    padding: 1px;
+}
+
+.mini .pic {
+    width:50px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.mini .legend {
+    display: none;
+
+
 }
 
 .legend {
     text-align: center;
     padding: 10px 20px;
 }
-                    .pic { 
-                        width:100%
+.centerPic { 
+    width:200px;
+    height: 600px;
+    object-fit: cover;
+}
 
-                        
-                    }
-   
-   
+.row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+
    
                 
                 div.container {
