@@ -74,3 +74,30 @@ h1 {
 .pola, .pic, .legend {
     transition: all 2s;
 }
+
+.container {
+    position: absolute;
+    top: 50%;;
+}
+
+#right {
+    text-align: right;
+    border: 0
+    position: absolute;
+    right: 0% ; 
+}
+
+#left {
+    text-align: left;
+    border: 0
+}
+
+.buttonSlide {
+    margin: 50px;
+    width: 75px;
+    height: 75px;
+    outline-style:initial;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 25px;
+    }
