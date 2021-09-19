@@ -20,7 +20,7 @@ function slideRight()  {
         
         //Add mini class to element after next
         miniElement = miniElement.nextElementSibling;
-        miniElement.classList.add("mini");
+        if(miniElement) { miniElement.classList.add("mini"); }
      }
 }
 //Function allows to slide to the next card on the left
@@ -45,15 +45,15 @@ function slideLeft() {
 
         //Add mini class to element before previous
         miniElement = miniElement.previousElementSibling;
-        miniElement.classList.add("mini");
+        if(miniElement) { miniElement.classList.add("mini"); }
     
     }
 
 }
 //Remember the state of autoslide
-var autoEnabled = false
+var autoEnabled = false;
 //Timer interval to enable stoping of auto
-var interTimer
+var interTimer;
 
 //Function allows to slide every 3s when enabled
 function autoSlide() {
