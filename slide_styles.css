@@ -10,24 +10,26 @@
 	padding: 15px 32px;
 	font-size: 16px;
 	cursor: pointer;
-	/* margin: auto; */
 	display: block;
 	margin-top: 50px;
 	margin-left: auto;
 	margin-right: auto;
     margin-bottom: 50px;
 }
+
 h1 {
     font-size: 30px;
     text-align: center;
     color : #2f4353
 }
+
 .pola.center {
     width: 200px;
     margin-bottom: 25px;
     padding: 5px;
     display: block;
 }
+
 .pola.mini { 
     width: 50px;
     margin-bottom: 5px;
@@ -41,27 +43,20 @@ h1 {
     object-fit: cover;
 }
 
-.mini .legend {
-    display: none;
-
-
-}
-
-.legend {
-    text-align: center;
-    padding: 10px 20px;
-}
 .center .pic { 
     width:200px;
     height: 600px;
     object-fit: cover;
 }
 
-.row::after {
-        content: "";
-        clear: both;
-        display: table;
-      }
+.mini .legend {
+    display: none;
+}
+
+.legend {
+    text-align: center;
+    padding: 10px 20px;
+}
 
 .pola {
     display: none;
@@ -81,14 +76,14 @@ h1 {
 
 #right {
     text-align: right;
-    border: 0
+    border: 0;
     position: absolute;
     right: 0% ; 
 }
 
 #left {
     text-align: left;
-    border: 0
+    border: 0;
 }
 
 .buttonSlide {
@@ -99,11 +94,12 @@ h1 {
     border-radius: 100px;
     cursor: pointer;
     font-size: 25px;
-    }
+}
+
 .button.on {
     background-color: #2f4353;
 }
 
 .button.off {
-    background-color:lightblue
+    background-color:lightblue;
 }
